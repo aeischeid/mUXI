@@ -8,7 +8,7 @@ GOALS:
   - be a cross mobile browser frontend framework 
   - be light-weight
   - themeable
-  - modular (as in easy to remove un needed pieces) 
+  - modular
   - convention based
   - utilize HTML5 and CSS3 where possible
   - demos are the documentation
