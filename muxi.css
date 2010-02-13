@@ -88,7 +88,7 @@ body[orient="landscape"] > .toolbar > h1 {
     background: none;
 }
 
-.blueButton {
+.altButton {
     border-width: 0 5px;
 }
 
@@ -106,9 +106,9 @@ body[orient="landscape"] > .toolbar > h1 {
     border-width: 0 4px 0 13px;
 }
 
-.whiteButton,
-.redButton,
-.grayButton {
+.bigButton1,
+.bigButton2,
+.bigButton3 {
     display: block;
     border-width: 0 12px;
     padding: 10px;
@@ -147,30 +147,6 @@ body > ul > li {
     font-size: 20px;
     font-weight: bold;
     list-style: none;
-}
-
-body > ul > li.group {
-    position: relative;
-    margin-bottom: -2px;
-    border-bottom: 0px solid #999999;
-    padding: 2px 10px;
-    font-size: 17px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
-body > ul > li.group:first-child {
-    top: 0;
-    border-top: none;
-}
-
-body > ul > li.message {
-    position: relative;
-    padding: 4px 10px;
-    background-color:#333333;
-    font-size: 14px;
-    font-weight: bold;
-    color: #e2e2e2;
 }
 
 body > ul > li > a {
@@ -256,6 +232,32 @@ body .panel {
     -moz-box-sizing: border-box;
     padding: 10px;
 }
+
+.panel > ul, 
+.panel > fieldset,
+.panel > p {
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: right;
+    font-size: 16px;
+}
+.panel > p {padding: 7px; text-align:left;}
+
+.panel > ul li,
+.panel > fieldset > div {
+    position: relative;
+    min-height: 42px;
+    border-bottom: 1px solid #999999;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+.panel > ul li:last-child,
+.panel > fieldset > div:last-child {
+    border-bottom: none !important;
+}
+
 .panel > ul > li a,
 .panel > fieldset > div > a {
     text-align:left;
@@ -285,29 +287,6 @@ body .panel {
 .panel > fieldset > div a img {
     vertical-align:middle;
     margin-left:-4px;
-}
-
-.panel > ul, 
-.panel > fieldset {
-    position: relative;
-    margin: 0 0 20px 0;
-    padding: 0;
-    text-align: right;
-    font-size: 16px;
-}
-
-.panel > ul li,
-.panel > fieldset > div {
-    position: relative;
-    min-height: 42px;
-    border-bottom: 1px solid #999999;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-}
-
-.panel > ul li:last-child,
-.panel > fieldset > div:last-child {
-    border-bottom: none !important;
 }
 
 /*.row > input:not(input[type|=radio]):not(input[type|=checkbox]) {*/
@@ -486,6 +465,14 @@ body .panel {
     font-size: inherit;
     font-weight: bold;
 }
+
+/************************************************************************************************/
+
+body > .textContent {padding: 0 10px 8px 10px; width: 95%;}
+body > .textContent > h2 {}
+body > .textContent > p {}
+body > .textContent > p a {}
+body > .textContent > p span {}
 
 /************************************************************************************************/
 

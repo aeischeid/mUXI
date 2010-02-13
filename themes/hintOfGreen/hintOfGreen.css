@@ -26,9 +26,29 @@ body > .toolbar {
   -moz-border-image: url(navbuttongreen.png) 0 5 0 5;
 }
 
-.blueButton {
+.altButton {
   -webkit-border-image: url(blueButton.png) 0 5 0 5;
   -moz-border-image: url(blueButton.png) 0 5 0 5;
+}
+
+.darkButton[selected],
+.darkButton:active,
+.lightButton {
+  text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+  background:transparent !important;
+}
+
+.colorButton {
+  background:transparent !important;
+  color:#fff;
+  text-shadow: #7a0001 0 -1px 0;
+}
+
+.lightButton[selected],
+.lightButton:active,
+.darkButton {
+  color: #fff;
+  background:transparent !important;
 }
 
 #backButton {
@@ -36,29 +56,48 @@ body > .toolbar {
   -moz-border-image: url(navleftgreen.png) 0 4 0 13;
 }
 
-.whiteButton {
+.lightButton {
   -webkit-border-image: url(whiteButton.png) 0 12 0 12;
   -moz-border-image: url(whiteButton.png) 0 12 0 12;
   text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
 }
 
-.redButton {
+.colorButton {
   -webkit-border-image: url(redButton.png) 0 12 0 12;
   -moz-border-image: url(redButton.png) 0 12 0 12;
 }
 
-.grayButton {
+.darkButton {
   -webkit-border-image: url(grayButton.png) 0 12 0 12;
   -moz-border-image: url(grayButton.png) 0 12 0 12;
-  color: #FFFFFF;
 }
 
 /************************************************************************************************/
 
 body > ul > li.group {
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#c8c8c8), to(#9c9c9c)) ;
   background: -moz-linear-gradient(top, #c8c8c8,#9c9c9c); 
   text-shadow: 1px 1px 1px #333;
+  color: #fff;
+  border-bottom: 0px solid #999999;
+  margin-bottom: -2px;
+  padding: 2px 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+body > ul > li.group:first-child {
+  top: 0;
+  border-top: none;
+}
+body > ul > li.message {
+  position: relative;
+  padding: 4px 10px;
+  background-color:#404040;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e2e2e2;
 }
 
 body > ul > li > a{
@@ -96,16 +135,16 @@ body .panel{
   background: #9c9c9c;
 } 
 .panel > h2 {
-  color: #ffffff;
+  color: #fff;
   text-shadow: 1px 1px 1px #000000;
 }
 
-.panel > fieldset, .panel > ul {
+.panel > fieldset, .panel > ul, .panel > p {
   list-style-type: none;
   -webkit-box-shadow: 2px 2px 2px #000;
   -moz-box-shadow: 2px 2px 2px #000;
   background: #585858;
-  color:#ffffff;
+  color:#fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border: 0px solid #d4d4d4;
@@ -116,7 +155,7 @@ input {color:#fff;font-weight: bold;}
 
 .toggle {
   border: 1px solid #888888;
-  background: #FFFFFF url(toggle.png) repeat-x;
+  background: #fff url(toggle.png) repeat-x;
 }
 
 .toggle[toggled="true"] {
@@ -124,7 +163,7 @@ input {color:#fff;font-weight: bold;}
 }
 
 .thumb {
-  background: #ffffff url(thumb.png) repeat-x;
+  background: #fff url(thumb.png) repeat-x;
 }
 
 /************************************************************************************************/
